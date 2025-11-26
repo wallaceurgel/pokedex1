@@ -2,6 +2,7 @@ const form = document.querySelector(".form");
 const input = document.querySelector(".inputSearch");
 const buttonPrev = document.querySelector(".btn");
 const buttonNext = document.querySelector(".btn-next");
+const buttoninfo = document.querySelector(".info");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
