@@ -41,7 +41,7 @@ const mostraPokemon = async (pokemon) => {
   }
 };
 const mostraPokemonInfo = async (pokemon)=>{
-  const data = await fetchPokemon(pokemon);
-  console.log = PokemonInfo.innerHTML = data.name;
+   const data = await fetchPokemon(pokemon);
+  console.log = PokemonInfo.innerHTML = data['types']['0']['type']['name'];
 }
 mostraPokemon(1);
