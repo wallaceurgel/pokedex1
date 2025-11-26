@@ -1,6 +1,8 @@
 const pokemonName = document.querySelector(".pokemonNome");
 const pokemonNumber = document.querySelector(".pokemonNum");
 const pokemonImage = document.querySelector(".pokemonImg");
+const PokemonInfo = document.querySelector(".pokemonDados")
+
 //const input = document.querySelector(".inputSearch"); tentando fazer com que o input >721 volte para o pokemon 1
 
 let pokemonAtual;
@@ -18,7 +20,6 @@ const mostraPokemon = async (pokemon) => {
   const data = await fetchPokemon(pokemon);
   pokemonName.innerHTML = data.name;
   pokemonNumber.innerHTML = data.id;
-
   if (data.id < 650) {
     pokemonAtual = data.id;
     pokemonImage.src =
@@ -39,4 +40,7 @@ const mostraPokemon = async (pokemon) => {
     pokemonAtual = data.id;
   }
 };
+const mostraPokemonInfo = async (pokemon)=>{
+  console.log = PokemonInfo.innerHTML = data['types']['0']['type']['name'];
+}
 mostraPokemon(1);
