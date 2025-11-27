@@ -20,6 +20,7 @@ main {
   width: 100%;
   max-width: 420px;
 }
+
 .pokemonImg {
   position: absolute;
 
@@ -28,6 +29,22 @@ main {
   transform: translate(-65%, 22%);
   width: 28%;
   height: 20%;
+}
+.pokemonDados{
+  width: 28%;
+  height: 15%;
+  position: absolute;
+
+  bottom: 55%;
+  left: 50%;
+}
+.pokemonDados2{
+  width: 28%;
+  height: 10%;
+  position: absolute;
+
+  bottom: 55%;
+  left: 50%;
 }
 .pokemonInfo {
   position: absolute;

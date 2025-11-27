@@ -17,9 +17,9 @@ form.addEventListener("submit", (event) => {
   }
   input.value = "";
 });
-buttonInfo.addEventListener("click",()=>{
-  mostraPokemonInfo(pokemonAtual);
-});
+//buttonInfo.addEventListener("click",()=>{
+ // mostraPokemonInfo(pokemonAtual);
+//});
 buttonPrev.addEventListener("click", () => {
   if (pokemonAtual > 1) {
     pokemonAtual -= 1;
