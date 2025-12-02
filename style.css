@@ -32,19 +32,25 @@ main {
 }
 .pokemonDados{
   width: 28%;
-  height: 15%;
+  height: 35%;
   position: absolute;
-
+  font-weight: 500;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.699);
   bottom: 55%;
-  left: 50%;
+  left: 54%;
+  text-transform: capitalize
 }
 .pokemonDados2{
   width: 28%;
-  height: 10%;
+  height: 30%;
   position: absolute;
-
+  font-weight: 500;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.699);
   bottom: 55%;
-  left: 50%;
+  left: 54%;
+  text-transform: capitalize;
 }
 .pokemonInfo {
   position: absolute;
