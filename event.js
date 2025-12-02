@@ -4,22 +4,29 @@ const buttonPrev = document.querySelector(".btn");
 const buttonNext = document.querySelector(".btn-next");
 const buttonInfo = document.querySelector(".info");
 
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (input.value <= 721) {
-    pokemonAtual = 1;
-    mostraPokemon(input.value.toLowerCase());
-  } else {
-    pokemonAtual = 1;
-    alert("a pokedex possue apenas 721 pokemons");
-    mostraPokemon(pokemonAtual);
-  }
-  input.value = "";
+  const valor = input.value.toLowerCase();
+  const num = Number(valor);
+
+if (isNaN(num)) {
+  mostraPokemon(valor);
+
+} else if (num >= 1 && num <= 721) {
+  pokemonAtual = num;
+  mostraPokemon(num);
+
+} else {
+  alert("a pokedex possue apenas 721 pokemons");
+  pokemonAtual = 1;
+  mostraPokemon(pokemonAtual);
+}
+
+input.value = "";
 });
-//buttonInfo.addEventListener("click",()=>{
- // mostraPokemonInfo(pokemonAtual);
-//});
+
 buttonPrev.addEventListener("click", () => {
   if (pokemonAtual > 1) {
     pokemonAtual -= 1;

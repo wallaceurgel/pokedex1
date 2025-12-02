@@ -50,14 +50,14 @@ const mostraPokemon = async (pokemon) => {
     pokemonAtual = data.id;
   }
   if(pokemonInfo2TF === true){
-        console.log=pokemonInfo.innerHTML = 
-      data['types']['0']['type']['name'];
-    console.log=pokemonInfo2.innerHTML = 
-      data['types']['1']['type']['name'] ; 
+      pokemonInfo.innerHTML = 
+        data['types']['0']['type']['name'];
+      pokemonInfo2.innerHTML = 
+        data['types']['1']['type']['name'] ; 
   } else{
-        console.log=pokemonInfo.innerHTML = 
-      data['types']['0']['type']['name'];
-      console.log=pokemonInfo2.innerHTML = ""
+      pokemonInfo.innerHTML = 
+        data['types']['0']['type']['name'];
+      pokemonInfo2.innerHTML = ""
   }
 };
 
