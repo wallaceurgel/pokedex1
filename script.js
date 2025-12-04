@@ -59,6 +59,7 @@ const mostraPokemon = async (pokemon) => {
         data['types']['0']['type']['name'];
       pokemonInfo2.innerHTML = ""
   }
+
 };
 
 mostraPokemon(1);

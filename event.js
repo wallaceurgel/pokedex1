@@ -7,23 +7,22 @@ const buttonInfo = document.querySelector(".info");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
+  
   const valor = input.value.toLowerCase();
   const num = Number(valor);
 
 if (isNaN(num)) {
   mostraPokemon(valor);
+  
 
-} else if (num >= 1 && num <= 721) {
+}else if (num >= 1 && num <= 721) {
   pokemonAtual = num;
   mostraPokemon(num);
 
-} else {
-  alert("a pokedex possue apenas 721 pokemons");
+} else { alert("a pokedex possue apenas 721 pokemons");
   pokemonAtual = 1;
   mostraPokemon(pokemonAtual);
-}
-
+} 
 input.value = "";
 });
 
@@ -32,7 +31,7 @@ buttonPrev.addEventListener("click", () => {
     pokemonAtual -= 1;
     mostraPokemon(pokemonAtual);
   } else {
-    mostraPokemon(pokemonAtual);
+    mostraPokemon(pokemonAtual);  
   }
 });
 buttonNext.addEventListener("click", () => {
@@ -44,3 +43,4 @@ buttonNext.addEventListener("click", () => {
   }
   mostraPokemon(pokemonAtual);
 });
+ 
